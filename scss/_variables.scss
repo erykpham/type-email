@@ -6,9 +6,11 @@
    --gap: 15px;
    --header-bg: #11110F;
    --login-btn: #4B4B4B;
-   --text-gray:#B5B3AF;
    --green: #00BD82;
    --yellow: #DFFF1B;
+   --text-gray:#B5B3AF;
+   --text-semi-gray: #4F4D49;
+   --text-light-gray: #EFE7D7;
    @media only screen and (min-width: 768px) {
       & {
          --gap: 30px;

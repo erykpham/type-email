@@ -1,0 +1,25 @@
+.countdown {
+   background-color: var(--yellow);
+   .inner {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      padding: 2.5rem 0;
+      
+   }
+   &__item {
+      text-align: center;
+      h3 {
+         font-size: 45px;
+      }
+      p {
+         color: var(--text-semi-gray);
+      }
+   }
+   @media only screen and (min-width: 768px) {
+      .inner {
+         flex-direction: row;
+         justify-content: space-around;
+      }
+   }
+}

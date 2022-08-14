@@ -1,10 +1,11 @@
 .header {
+   --aspect-ratio: 0.49375;
    --header-img-value: clamp(340px, 60vw, 820px);
    position: relative;
    background-color: var(--header-bg);
    min-height: 40vh;
    padding-top: 5px;
-   padding-bottom: calc(2 / 3 * (9 / 16 * var(--header-img-value)));
+   margin-bottom: 3rem;
    .navbar {
       display: flex;
       justify-content: space-between;
@@ -145,18 +146,19 @@
       }
    }
    &__img {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translate(-1.5rem, 3rem);
       width: var(--header-img-value);
-      padding-top: calc(9 / 16 * var(--header-img-value));
+      padding-top: calc(var(--aspect-ratio) * var(--header-img-value));
       margin: 0 auto;
       background-image: url('../assets/banner.png');
       background-size: contain;
       background-repeat: no-repeat;
+      @media only screen and (min-width: 768px) {
+         transform: translate(-1.5rem, 5rem);
+      }
    }
    @media only screen and (min-width: 768px) {
       padding-top: 2rem;
+      margin-bottom: 5rem;
    }
 }

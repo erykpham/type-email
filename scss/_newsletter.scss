@@ -1,0 +1,98 @@
+.newsletter {
+   .article {
+      margin-bottom: 4rem;
+      &__img {
+         text-align: right;
+         margin-bottom: 2rem;
+         margin-right: -30px;
+         img {
+            width: 350px;
+            height: 350px;
+         }
+      }
+      &__text {
+      }
+      &__title {
+         margin-bottom: 1rem;
+         font-size: 24px;
+      }
+      &__subtitle {
+         color: var(--text-semi-gray);
+      }
+      &__item-container {
+         margin-top: 3rem;
+         section {
+            margin-bottom: 2rem;
+            .icon__container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               height: 35px;
+               width: 35px;
+               border-radius: 5rem;
+               background-color: var(--green);
+               i {
+                  font-size: 16px;
+                  color: white;
+               }
+            }
+            h4 {
+               margin: 10px 0;
+            }
+            p {
+               margin-bottom: 5px;
+            }
+            a {
+               font-weight: bold;
+               color: inherit;
+            }
+         }
+      }
+      &__content {
+         margin: 1rem 0 3rem 0;
+         color: var(--text-semi-gray);
+         .underline {
+            display: inline-block;
+            height: 2px;
+            width: 2rem;
+            transform: translateY(-0.5rem);
+            border-radius: 2px;
+            background-color: var(--green);
+         }
+      }
+      .learn-more {
+         height: 44px;
+         width: 100%;
+         border-radius: 3px;
+         background-color: var(--green);
+         color: white;
+      }
+      @media only screen and (min-width: 768px) {
+         & {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 3rem;
+            &:nth-of-type(2) {
+               flex-direction: row;
+               gap: 7rem;
+            }
+         }
+         &__item-container {
+            display: flex;
+            gap: 3rem;
+            section {
+               display: flex;
+               flex-direction: column;
+               justify-content: space-between;
+            }
+         }
+      }
+   }
+   .article:last-child .article__img {
+      text-align-last: left;
+      img {
+         margin-right: 0;
+         margin-left: -30px;
+      }
+   }
+}
