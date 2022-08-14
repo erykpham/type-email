@@ -30,6 +30,7 @@
                height: 35px;
                width: 35px;
                border-radius: 5rem;
+               margin-bottom: 2rem;
                background-color: var(--green);
                i {
                   font-size: 16px;
@@ -37,14 +38,19 @@
                }
             }
             h4 {
-               margin: 10px 0;
+               margin-top: 10px;
+               margin-bottom: 2px;
+               font-size: 19px;
             }
             p {
                margin-bottom: 5px;
+               color: var(--text-semi-gray);
             }
             a {
                font-weight: bold;
                color: inherit;
+               font-size: 14px;
+               text-decoration: underline;
             }
          }
       }
@@ -76,7 +82,6 @@
                flex-direction: row;
                gap: 7rem;
             }
-            
          }
          &__item-container {
             display: flex;

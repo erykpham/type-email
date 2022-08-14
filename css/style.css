@@ -343,6 +343,7 @@ p {
   height: 35px;
   width: 35px;
   border-radius: 5rem;
+  margin-bottom: 2rem;
   background-color: var(--green);
 }
 .newsletter .article__item-container section .icon__container i {
@@ -350,14 +351,19 @@ p {
   color: white;
 }
 .newsletter .article__item-container section h4 {
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 2px;
+  font-size: 19px;
 }
 .newsletter .article__item-container section p {
   margin-bottom: 5px;
+  color: var(--text-semi-gray);
 }
 .newsletter .article__item-container section a {
   font-weight: bold;
   color: inherit;
+  font-size: 14px;
+  text-decoration: underline;
 }
 .newsletter .article__content {
   margin: 1rem 0 3rem 0;
@@ -508,6 +514,100 @@ p {
   .imagradtion__img {
     flex-shrink: 0;
   }
+}
+
+.library-btn__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto 5rem;
+}
+.library-btn__container button {
+  width: 30%;
+  height: 44px;
+  border-radius: 4px;
+  color: black;
+  background-color: transparent;
+}
+.library-btn__container button.active {
+  background-color: black;
+  color: var(--yellow);
+}
+.library-items div {
+  width: 65%;
+  max-width: 450px;
+  margin: 0 auto 4rem;
+}
+.library-items div img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.library-items div span {
+  font-size: 14px;
+  color: var(--green);
+}
+.library-items div p {
+  margin-top: 10px;
+}
+@media only screen and (min-width: 768px) {
+  .library-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+.library .update {
+  width: 65%;
+  height: 44px;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-color: var(--green);
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .library .update {
+    width: fit-content;
+    padding: 0 30px;
+  }
+}
+
+.footer {
+  height: 350px;
+  background-color: black;
+}
+.footer .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.footer a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.footer a img {
+  width: 30px;
+}
+.footer h3 {
+  color: white;
+}
+.footer p {
+  color: var(--text-light-gray);
+}
+.footer-btn {
+  height: 55px;
+  width: fit-content;
+  padding: 0 40px;
+  border-radius: 4px;
+  background-color: var(--green);
+  color: white;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

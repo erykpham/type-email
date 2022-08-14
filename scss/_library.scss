@@ -1,0 +1,58 @@
+.library {
+   &-btn__container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto 5rem;
+      button {
+         width: 30%;
+         height: 44px;
+         border-radius: 4px;
+         color: black;
+         background-color: transparent;
+         &.active {
+            background-color: black;
+            color: var(--yellow);
+         }
+      }
+   }
+   &-items {
+      div {
+         width: 65%;
+         max-width: 450px;
+         margin: 0 auto 4rem;
+         img {
+            height: 250px;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 2rem;
+         }
+         span {
+            font-size: 14px;
+            color: var(--green);
+         }
+         p {
+            margin-top: 10px;
+         }
+      }
+      @media only screen and (min-width: 768px) {
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
+         gap: 2rem;
+      }
+   }
+   .update {
+      width: 65%;
+      height: 44px;
+      border-radius: 4px;
+      margin: 0 auto;
+      background-color: var(--green);
+      color: white;
+      @media only screen and (min-width: 768px) {
+         width: fit-content;
+         padding: 0 30px;
+      }
+   }
+}
