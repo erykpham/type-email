@@ -1,0 +1,28 @@
+@use 'variables';
+.outer {
+   max-width: var(--outer-size);
+   margin: 0 auto;
+}
+.inner {
+   max-width: calc(var(--inner-size) + var(--gap) * 2);
+   padding: 0 var(--gap);
+   margin: 0 auto;
+}
+body {
+   background-color: var(--body-bg);
+   font-family: var(--primary-font);
+}
+
+.text-primary {
+   color: transparent;
+   background-clip: text;
+   -webkit-background-clip: text;
+   background-image: linear-gradient(92.55deg, #defe1b -5.35%, #00bd82 114.92%);
+}
+.btn {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: none;
+   cursor: pointer;
+}
