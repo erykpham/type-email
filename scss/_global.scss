@@ -9,8 +9,11 @@
    margin: 0 auto;
 }
 body {
-   background-color: var(--body-bg);
+   background-color: #fdf9f1;
    font-family: var(--primary-font);
+}
+p {
+   line-height: 1.6;
 }
 
 .text-primary {

@@ -1,0 +1,50 @@
+.service {
+   &-item__container {
+      section {
+         padding: 15px 0;
+         margin-bottom: 4rem;
+         .icon-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35px;
+            width: 35px;
+            border-radius: 5rem;
+            background-color: var(--green);
+            color: white;
+         }
+         h3 {
+            font-size: 24px;
+            margin: 1rem 0 10px;
+         }
+         p {
+            color: var(--text-semi-gray);
+            
+         }
+      }
+      section:nth-child(2) {
+         margin: 0 -15px;
+         padding-left: 15px;
+         padding-right: 15px;
+         background-color: #fff;
+         @media only screen and (min-width: 768px) {
+            padding-left: 30px;
+            padding-right: 30px;
+            margin: 0 -30px;
+         }
+      }
+      @media only screen and (min-width: 768px) {
+         display: flex;
+         justify-content: space-around;
+         gap: 2rem;
+         h3 {
+            font-size: 20px !important;
+         }
+         section:nth-child(2) {
+            margin: 0 !important;
+            padding-left: 15px;
+            padding-right: 15px;
+         }
+      }
+   }
+}
