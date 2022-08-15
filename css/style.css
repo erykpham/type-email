@@ -307,7 +307,7 @@ p {
   }
 }
 .header__img {
-  transform: translate(-1.5rem, 3rem);
+  transform: translate(-1.2rem, 3rem);
   width: var(--header-img-value);
   padding-top: calc(var(--aspect-ratio) * var(--header-img-value));
   margin: 0 auto;
