@@ -28,6 +28,10 @@ p {
    align-items: center;
    border: none;
    cursor: pointer;
+   transition: 0.2s linear;
+   &:hover {
+      transform: scale(1.1);
+   }
 }
 .section {
    margin-top: 60px;

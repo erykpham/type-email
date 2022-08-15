@@ -16,30 +16,39 @@
       />
       <link rel="stylesheet" href="./css/style.css" />
       <link rel="stylesheet" href="./scss/style.scss" />
+
       <title>Type email</title>
    </head>
    <body>
       <main class="outer">
          <!-- 1.header -->
-         <header class="header">
+         <header id="home" class="link-to header">
             <div class="inner">
                <!-- 1.1 navbar -->
                <nav class="navbar">
-                  <a href="/" class="logo text-primary">
-                     <img src="./assets/logo.png" alt="type email" />
-                     Type Email
-                  </a>
-                  <div class="navbar__main">
-                     <a href="home">Home</a>
-                     <a href="pricing">Pricing</a>
-                     <a href="resources">Resources</a>
-                     <a href="support">Support</a>
-                  </div>
-                  <a href="" class="login btn">Log In</a>
-                  <div class="hamburger">
-                     <span></span>
-                     <span></span>
-                     <span></span>
+                  <div class="inner">
+                     <a href="/" class="logo text-primary">
+                        <img src="./assets/logo.png" alt="type email" />
+                        Type Email
+                     </a>
+                     <div class="navbar__main laptop">
+                        <a class="link active" href="#home">Home</a>
+                        <a class="link" href="#newsletter">Newsletter</a>
+                        <a class="link" href="#service">Services</a>
+                        <a class="link" href="#resource">Resources</a>
+                     </div>
+                     <div class="navbar__main mobile">
+                        <a class="link active" href="#home">Home</a>
+                        <a class="link" href="#newsletter">Newsletter</a>
+                        <a class="link" href="#service">Services</a>
+                        <a class="link" href="#resource">Resources</a>
+                     </div>
+                     <a href="/" class="login btn">Log In</a>
+                     <div class="hamburger closeIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                     </div>
                   </div>
                </nav>
                <!-- 1.2 content -->
@@ -79,7 +88,7 @@
          </section>
 
          <!-- 3.newsletter -->
-         <section class="newsletter section">
+         <section id="newsletter" class="link-to newsletter section">
             <!-- 3.1 title -->
             <div class="inner">
                <h2 class="title">More than just drips and newsletters</h2>
@@ -155,7 +164,7 @@
          </section>
 
          <!-- 4.service -->
-         <section class="service section">
+         <section id="service" class="link-to service section">
             <div class="inner">
                <h2 class="title">Our some service</h2>
                <p class="subtitle"></p>
@@ -209,17 +218,17 @@
             ></div>
          </section>
          <!-- 6.library -->
-         <section class="section library">
+         <section id="resource" class="link-to section library">
             <div class="inner">
                <h2 class="title">Sendlane Resource Library</h2>
                <p class="subtitle">
-                  Cat in tuch with of our compare and take a personal tour of
+                  Cat in touch with of our compare and take a personal tour of
                   Sraklune
                </p>
                <div class="library-btn__container">
-                  <button class="active btn">Articles</button>
-                  <button class="btn">Ebooks</button>
-                  <button class="btn">Products</button>
+                  <button class="library-btn active btn">Articles</button>
+                  <button class="library-btn btn">Ebooks</button>
+                  <button class="library-btn btn">Products</button>
                </div>
                <div class="library-items">
                   <div>
@@ -260,5 +269,6 @@
             </div>
          </footer>
       </main>
+      <script type="module" src="./js/script.js"></script>
    </body>
 </html>
