@@ -21,7 +21,3 @@
 -  Sass(scss)
 
 ## Design: evondev.com
-
-## Contact me: phamthang11782@gmail.com
-
-#### It's my pleasure to work with you 😊
